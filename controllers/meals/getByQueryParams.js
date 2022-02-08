@@ -22,8 +22,7 @@ function getByCategory(request, response) {
         if(meal.strMeal.toLowerCase().startsWith(request.query.f)){
             return meal;
         }
-    }
-    )
+    })
 
     response.status(200).json(meal);
 }
